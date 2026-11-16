@@ -1,0 +1,444 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="MailCraft helps you create clear, professional emails quickly and easily.">
+
+    <title>MailCraft | Smart Email Writer</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- ==============================
+         NAVIGATION
+    =============================== -->
+
+    <header class="navbar">
+
+        <a href="#home" class="logo" aria-label="MailCraft Home">
+            <span class="logo-icon">✉</span>
+            MailCraft
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <a href="#generator" class="nav-button">
+            Get Started <span>→</span>
+        </a>
+
+    </header>
+
+
+    <main>
+
+        <!-- ==============================
+             HERO SECTION
+        =============================== -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="tag">
+                    <span class="tag-dot"></span>
+                    SMART EMAIL WRITER
+                </span>
+
+                <h1>
+                    Write better emails.
+                    <span>In seconds.</span>
+                </h1>
+
+                <p>
+                    Transform your ideas into professional emails
+                    with simple and intelligent writing assistance.
+                    Simple, fast and effortless.
+                </p>
+
+                <a href="#generator" class="hero-button">
+                    Create Your Email <span>→</span>
+                </a>
+
+                <div class="hero-note">
+                    <span>✦</span>
+                    Simple writing. Smarter communication.
+                </div>
+
+            </div>
+
+
+            <!-- ==============================
+                 EMAIL GENERATOR
+            =============================== -->
+
+            <section class="email-card" id="generator">
+
+                <div class="card-heading">
+
+                    <div>
+                        <span class="card-label">EMAIL GENERATOR</span>
+                        <h2>Create your email</h2>
+                    </div>
+
+                    <div class="card-icon">✉</div>
+
+                </div>
+
+                <p class="card-description">
+                    Tell us what you want to write. We'll help
+                    you find the right words.
+                </p>
+
+
+                <!-- Email Purpose -->
+
+                <label for="purpose">
+                    What would you like to write?
+                </label>
+
+                <textarea
+                    id="purpose"
+                    placeholder="Example: I want to request two days leave from my manager..."
+                    rows="5"></textarea>
+
+
+                <!-- Recipient -->
+
+                <label for="recipient">
+                    Who are you writing to?
+                </label>
+
+                <select id="recipient">
+                    <option value="">Select recipient</option>
+                    <option value="HR">HR</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Professor">Professor</option>
+                    <option value="Customer">Customer</option>
+                </select>
+
+
+                <!-- Email Tone -->
+
+                <label for="tone">
+                    Choose your email tone
+                </label>
+
+                <select id="tone">
+                    <option value="Professional">Professional</option>
+                    <option value="Formal">Formal</option>
+                    <option value="Friendly">Friendly</option>
+                </select>
+
+
+                <!-- Generate Button -->
+
+                <button type="button" class="generate-button">
+                    ✨ Generate Email
+                </button>
+
+
+                <!-- Generated Email Output -->
+
+                <div class="email-output"
+                     aria-live="polite"
+                     aria-label="Generated email output">
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- ==============================
+             FEATURES SECTION
+        =============================== -->
+
+        <section class="features-section" id="features">
+
+            <div class="section-heading">
+
+                <span class="section-label">WHAT WE OFFER</span>
+
+                <h2>
+                    Everything you need.
+                    <span>Nothing complicated.</span>
+                </h2>
+
+                <p>
+                    From your first idea to your final email,
+                    make every message clear and professional.
+                </p>
+
+            </div>
+
+
+            <div class="features-grid">
+
+
+                <!-- Feature 1 -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">✧</div>
+
+                    <span class="feature-number">01</span>
+
+                    <h3>Smart Email Writing</h3>
+
+                    <p>
+                        Turn simple ideas into well-written emails
+                        in just a few seconds.
+                    </p>
+
+                </div>
+
+
+                <!-- Feature 2 -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">◎</div>
+
+                    <span class="feature-number">02</span>
+
+                    <h3>Multiple Recipients</h3>
+
+                    <p>
+                        Write the right message for HR, managers,
+                        professors and customers.
+                    </p>
+
+                </div>
+
+
+                <!-- Feature 3 -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">Aa</div>
+
+                    <span class="feature-number">03</span>
+
+                    <h3>Choose Your Tone</h3>
+
+                    <p>
+                        Switch between Professional, Formal
+                        and Friendly communication styles.
+                    </p>
+
+                </div>
+
+
+                <!-- Feature 4 -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">▢</div>
+
+                    <span class="feature-number">04</span>
+
+                    <h3>One-Click Copy</h3>
+
+                    <p>
+                        Copy your completed email instantly
+                        and use it wherever you communicate.
+                    </p>
+
+                </div>
+
+
+                <!-- Feature 5 -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">↗</div>
+
+                    <span class="feature-number">05</span>
+
+                    <h3>Save Valuable Time</h3>
+
+                    <p>
+                        Spend less time writing and more time
+                        focusing on what matters.
+                    </p>
+
+                </div>
+
+
+                <!-- Feature 6 -->
+
+                <div class="feature-card feature-highlight">
+
+                    <div class="feature-icon">✉</div>
+
+                    <span class="feature-number">06</span>
+
+                    <h3>Simple Experience</h3>
+
+                    <p>
+                        No complicated steps. Just describe
+                        your purpose and get your email.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             ABOUT SECTION
+        =============================== -->
+
+        <section class="about-section" id="about">
+
+            <div class="about-content">
+
+                <span class="section-label">
+                    ABOUT MAILCRAFT
+                </span>
+
+                <h2>
+                    Great communication
+                    starts with
+                    <span>the right words.</span>
+                </h2>
+
+                <p>
+                    MailCraft makes email writing simple.
+                    It transforms your ideas into clear,
+                    natural and professional messages.
+                </p>
+
+                <p>
+                    Whether you are applying for a job,
+                    requesting leave, contacting a professor
+                    or communicating with a customer,
+                    MailCraft helps you express yourself
+                    with confidence.
+                </p>
+
+                <a href="#generator" class="about-button">
+                    Start Writing <span>→</span>
+                </a>
+
+            </div>
+
+
+            <!-- Decorative Email Preview -->
+
+            <div class="about-visual">
+
+                <div class="about-glow"></div>
+
+                <div class="about-message">
+
+                    <div class="message-top">
+
+                        <span class="message-logo">✉</span>
+
+                        <span>MailCraft</span>
+
+                        <span class="message-dot"></span>
+
+                    </div>
+
+                    <div class="message-subject">
+                        Your email is ready
+                    </div>
+
+                    <div class="message-line"></div>
+
+                    <div class="message-line short"></div>
+
+                    <div class="message-space"></div>
+
+                    <div class="message-line"></div>
+
+                    <div class="message-line"></div>
+
+                    <div class="message-line short"></div>
+
+                    <div class="message-status">
+                        <span>✓</span>
+                        Ready to copy
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+                    <span class="logo-icon">✉</span>
+                    MailCraft
+                </a>
+
+                <p>Make every email count.</p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+
+                <a href="#features">Features</a>
+
+                <a href="#about">About</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 MailCraft. All rights reserved.
+            </p>
+
+            <p>
+                Built with Python, Flask & Groq.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
